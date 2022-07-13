@@ -121,7 +121,7 @@ server.use(
 // Note:
 // Do not create any routes after .listen()
 server.listen(
-    process.env.PORT || 3011,
+    process.env.PORT || 3145,
     function() {
         console.log('Server is running at http://localhost:3011')
     }
