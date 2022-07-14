@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 
 // Creating the schema
 const UserSchema = new mongoose.Schema({
-    "firstname": {
+    "firstName": {
         type: String,
         required: true
     },
-    "lastname": {
+    "lastName": {
         type: String,
         required: true
     },
@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     },
-    "phonenumber": {
+    "phoneNumber": {
         type: String,
         required: false
     },

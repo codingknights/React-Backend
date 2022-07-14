@@ -26,7 +26,7 @@ router.post(
 
             // 2. Generate a hash
             const salt = await bcryptjs.genSalt();
-            const hashedPassword = await bcryptjs.hash(req.body.password, salt);
+            const hashedPassword = await bcryptjs.hash(req.body.password,salt);
 
             // 3. Replace the original password with hash
             newDocument.password = hashedPassword;
